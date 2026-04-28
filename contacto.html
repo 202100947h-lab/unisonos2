@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNISONOS | Contáctanos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="header-left">
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="experiencias.html" class="nav-link">Experiencias</a>
+      </div>
+
+      <div class="brand-center">
+        <a href="index.html">UNISONOS</a>
+      </div>
+
+      <div class="header-right">
+        <a href="contacto.html" class="nav-link active">Contáctanos</a>
+        <button class="sound-toggle" id="soundToggle">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <audio id="siteAudio" loop>
+    <source src="assets/audio/unisonos.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="contact-reel">
+      <div class="container">
+        <div class="reel-frame">
+          <div class="reel-slider" id="reelSlider">
+            <div class="reel-slide active"><img src="assets/contacto/contact1.jpg" alt=""></div>
+            <div class="reel-slide"><img src="assets/contacto/contact2.jpg" alt=""></div>
+            <div class="reel-slide"><img src="assets/contacto/contact3.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-split">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <div class="contact-form-card">
+            <h2>Contáctanos</h2>
+
+            <form class="form-grid" action="enviar.php" method="POST">
+              <input type="text" name="nombre" placeholder="Nombre" required>
+              <input type="email" name="correo" placeholder="Correo" required>
+              <input type="text" name="empresa" placeholder="Nombre de compañía" required>
+
+              <div class="checklist-box">
+                <h3>Haz tu evento</h3>
+                <div class="checklist-options">
+                  <label class="check-item"><input type="checkbox" name="evento[]" value="Lanzamiento de marca"> Lanzamiento de marca</label>
+                  <label class="check-item"><input type="checkbox" name="evento[]" value="Evento corporativo"> Evento corporativo</label>
+                  <label class="check-item"><input type="checkbox" name="evento[]" value="Activación de marca"> Activación de marca</label>
+                  <label class="check-item"><input type="checkbox" name="evento[]" value="Producción audiovisual"> Producción audiovisual</label>
+                  <label class="check-item"><input type="checkbox" name="evento[]" value="Experiencia inmersiva"> Experiencia inmersiva</label>
+                  <label class="check-item"><input type="checkbox" name="evento[]" value="Concierto o show"> Concierto o show</label>
+                  <label class="check-item"><input type="checkbox" name="evento[]" value="Evento privado"> Evento privado</label>
+                  <label class="check-item"><input type="checkbox" name="evento[]" value="Festival cultural"> Festival cultural</label>
+                  <label class="check-item"><input type="checkbox" name="evento[]" value="Cobertura de evento"> Cobertura de evento</label>
+                  <label class="check-item"><input type="checkbox" name="evento[]" value="Experiencia personalizada"> Experiencia personalizada</label>
+                </div>
+              </div>
+
+              <label class="terms">
+                <input type="checkbox" name="terminos" required>
+                <span>Acepto los términos y condiciones para el tratamiento de mis datos y el contacto posterior.</span>
+              </label>
+
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+
+          <div class="contact-image-card">
+            <div class="selected-services-panel">
+              <h4>Tu evento</h4>
+              <div class="selected-services-list" id="selectedServicesList">
+                <span>Selecciona opciones</span>
+              </div>
+            </div>
+
+            <img src="assets/contacto/dia.jpg" alt="Danza cusqueña diablada">
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  
+    <section class="contact-split">
+      <div class="contact-left">
+        <h1 class="contact-title">Contáctanos</h1>
+
+        <!-- Toggle oculto para abrir/cerrar el panel -->
+        <input type="checkbox" id="toggle-checklist" class="checklist-toggle">
+
+        <form action="mailto:tucorreo@unisonos.com" method="POST" enctype="text/plain" class="contact-form">
+          <input type="text" name="Nombre" class="form-input" placeholder="Nombre completo" required>
+          <input type="email" name="Correo" class="form-input" placeholder="Correo electrónico" required>
+          <input type="text" name="Compania" class="form-input" placeholder="Nombre de la compañía" required>
+
+          <!-- Botón visual para abrir -->
+          <label for="toggle-checklist" class="event-trigger">
+            <span>Haz tu evento (Seleccionar)</span>
+            <span class="event-plus">+</span>
+          </label>
+
+          <label class="terms-box">
+            <input type="checkbox" required>
+            <span>Acepto los términos y condiciones de privacidad.</span>
+          </label>
+
+          <button type="submit" class="btn-gold">Enviar Información</button>
+
+          <!-- Panel checklist -->
+          <div class="checklist-panel">
+            <div class="checklist-head">
+              <h2>Alcance del Proyecto</h2>
+              <label for="toggle-checklist" class="checklist-close">×</label>
+            </div>
+
+            <p class="checklist-copy">
+              Selecciona una o varias categorías para ayudarnos a entender mejor tu evento.
+            </p>
+
+            <div class="checklist-grid">
+              <label><input type="checkbox" name="evento[]" value="Corporativo"> Corporativo</label>
+              <label><input type="checkbox" name="evento[]" value="Gala"> Cena de Gala</label>
+              <label><input type="checkbox" name="evento[]" value="Lanzamiento"> Lanzamiento</label>
+              <label><input type="checkbox" name="evento[]" value="Cultural"> Evento Cultural</label>
+              <label><input type="checkbox" name="evento[]" value="BTL"> Activación BTL</label>
+              <label><input type="checkbox" name="evento[]" value="Danza"> Espectáculo Danza</label>
+              <label><input type="checkbox" name="evento[]" value="Privado"> Privado Exclusivo</label>
+              <label><input type="checkbox" name="evento[]" value="Integracion"> Integración</label>
+              <label><input type="checkbox" name="evento[]" value="Congreso"> Congreso</label>
+              <label><input type="checkbox" name="evento[]" value="Premiacion"> Premiación</label>
+            </div>
+
+            <!-- Botón visual para cerrar -->
+            <label for="toggle-checklist" class="btn-gold checklist-confirm">
+              Confirmar
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="contact-right">
+        <img src="assets/home/portadaUNISONOS.gif" alt="Danza Cusqueña Diablada">
+      </div>
+    </section>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

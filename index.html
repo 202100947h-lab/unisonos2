@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNISONOS | Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="header-left">
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="experiencias.html" class="nav-link">Experiencias</a>
+      </div>
+
+      <div class="brand-center">
+        <a href="index.html">UNISONOS</a>
+      </div>
+
+      <div class="header-right">
+        <a href="contacto.html" class="nav-link">Contáctanos</a>
+        <button class="sound-toggle" id="soundToggle">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <audio id="siteAudio" loop>
+    <source src="assets/audio/unisonos.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="hero-home">
+      <div class="hero-media" id="heroMedia">
+        <img src="assets/home/portadaUNISONOS.gif" alt="Portada UNISONOS">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div>
+          <h1>UNISONOS</h1>
+          <p>Experiencias visuales, sonoras y memorables construidas con identidad, atmósfera y elegancia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="image-slider section">
+      <div class="container">
+        <h2 class="section-title">Nuestra esencia en movimiento</h2>
+        <p class="section-copy"><b>Un recorrido visual de la atmósfera, el detalle y la sensibilidad que definen cada experiencia.</b></p>
+
+        <div class="slider-frame">
+          <div class="slider-track" id="mainSliderTrack">
+            <article class="slide-item">
+              <img src="assets/home/slide1.jpg" alt="Slide 1">
+              <div class="slide-caption">Escenarios con intención</div>
+            </article>
+            <article class="slide-item">
+              <img src="assets/home/slide2.jpg" alt="Slide 2">
+              <div class="slide-caption">Dirección estética y emoción</div>
+            </article>
+            <article class="slide-item">
+              <img src="assets/home/slide3.jpg" alt="Slide 3">
+              <div class="slide-caption">Narrativas que se viven</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients-section">
+      <div class="container">
+        <h2 class="section-title">Nuestros clientes</h2>
+        <p class="section-copy"><b>Canales, proyectos y colaboraciones que forman parte del universo UNISONOS.</b></p>
+
+        <div class="clients-carousel">
+          <div class="clients-track" id="clientsTrack">
+            
+            <article class="client-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1">
+              <div class="client-thumb">
+                <img src="assets/home/cliente1.jpg" alt="Cliente 1">
+              </div>
+              <div class="client-info">
+                <h3>Cliente 01</h3>
+                <p>Canal audiovisual y presencia de marca.</p>
+              </div>
+            </article>
+
+            <article class="client-card" data-video="https://www.youtube.com/embed/ysz5S6PUM-U?autoplay=1">
+              <div class="client-thumb">
+                <img src="assets/home/cliente2.jpg" alt="Cliente 2">
+              </div>
+              <div class="client-info">
+                <h3>Cliente 02</h3>
+                <p>Producción inmersiva y conexión con audiencia.</p>
+              </div>
+            </article>
+
+            <article class="client-card" data-video="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+              <div class="client-thumb">
+                <img src="assets/home/cliente3.jpg" alt="Cliente 3">
+              </div>
+              <div class="client-info">
+                <h3>Cliente 03</h3>
+                <p>Experiencias vivas, marca y difusión.</p>
+              </div>
+            </article>
+
+            <!-- Duplicados para efecto continuo -->
+            <article class="client-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1">
+              <div class="client-thumb">
+                <img src="assets/home/cliente1.jpg" alt="Cliente 1">
+              </div>
+              <div class="client-info">
+                <h3>Cliente 01</h3>
+                <p>Canal audiovisual y presencia de marca.</p>
+              </div>
+            </article>
+
+            <article class="client-card" data-video="https://www.youtube.com/embed/ysz5S6PUM-U?autoplay=1">
+              <div class="client-thumb">
+                <img src="assets/home/cliente2.jpg" alt="Cliente 2">
+              </div>
+              <div class="client-info">
+                <h3>Cliente 02</h3>
+                <p>Producción inmersiva y conexión con audiencia.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="gallery-actions">
+          <a href="experiencias.html" class="btn btn-primary">Ver más clientes</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNISONOS | Experiencias</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="header-left">
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="experiencias.html" class="nav-link active">Experiencias</a>
+      </div>
+
+      <div class="brand-center">
+        <a href="index.html">UNISONOS</a>
+      </div>
+
+      <div class="header-right">
+        <a href="contacto.html" class="nav-link">Contáctanos</a>
+        <button class="sound-toggle" id="soundToggle">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <audio id="siteAudio" loop>
+    <source src="assets/audio/unisonos.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="experiences-hero">
+      <div class="crossfade-slide active"><img src="assets/experiencias/exp1.jpg" alt=""></div>
+      <div class="crossfade-slide"><img src="assets/experiencias/exp2.jpg" alt=""></div>
+      <div class="crossfade-slide"><img src="assets/experiencias/exp3.jpg" alt=""></div>
+      <div class="crossfade-overlay"></div>
+
+      <div class="hero-content">
+        <div>
+          <h1>Experiencias</h1>
+          <p>Instantes diseñados para permanecer. Estética, emoción y presencia en una misma atmósfera.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Galería</h2>
+        <p class="section-copy">Una selección visual con un lenguaje sobrio, delicado y memorable.</p>
+
+        <div class="gallery-grid">
+          <article class="gallery-card"><img src="assets/experiencias/gal1.jpg" alt=""></article>
+          <article class="gallery-card"><img src="assets/experiencias/gal2.jpg" alt=""></article>
+          <article class="gallery-card"><img src="assets/experiencias/gal3.jpg" alt=""></article>
+        </div>
+
+        <div class="gallery-actions">
+          <a href="#" class="btn btn-outline">Ver más</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Eventos</h2>
+        <p class="section-copy">Momentos vivos, cuidadosamente dirigidos para proyectar identidad y elegancia.</p>
+
+        <div class="gallery-grid">
+          <article class="gallery-card"><img src="assets/experiencias/event1.jpg" alt=""></article>
+          <article class="gallery-card"><img src="assets/experiencias/event2.jpg" alt=""></article>
+          <article class="gallery-card"><img src="assets/experiencias/event3.jpg" alt=""></article>
+        </div>
+
+        <div class="gallery-actions">
+          <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
