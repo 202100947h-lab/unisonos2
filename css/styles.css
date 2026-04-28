@@ -1,8 +1,8 @@
 :root {
   /* Fondo principal */
-  --bg-parchment-image: url("../assets/textures/textura_2.webp");
+  --bg-parchment-image: url("../assets/textures/textura.webp");
   --bg-parchment-base: #e7d8bb;
-  --bg-parchment-overlay: rgba(255, 248, 235, 0.68);
+--bg-parchment-overlay: rgba(255, 248, 235, 0.00);
 
   /* Colores */
   --color-ink: #231c14;
