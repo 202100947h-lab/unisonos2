@@ -57,8 +57,8 @@ body {
   font-family: var(--font-body);
   color: var(--color-ink);
   background: var(--page-background);
-  background-size: cover;
-  background-position: center;
+  background-size: auto;
+  background-repeat: repeat;
   background-attachment: fixed;
   line-height: 1.6;
 }
